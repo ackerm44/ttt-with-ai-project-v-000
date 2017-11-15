@@ -35,5 +35,5 @@ end
 
 # Output to players starts here and then creates a new NewGame class as found above.
 puts "Welcome to Tic Tac Toe!"
-puts "-------------------------------------------------------------------------"
+puts "--------------------------------------"
 NewGame.new.start
