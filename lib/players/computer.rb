@@ -32,7 +32,7 @@ module Players
       elsif board.turn_count == 1
         board.taken?(4) ? "1" : "5"
       elsif board.turn_count == 2
-        if (board.valid_move?(2) && board.cells[1] != "O")
+        if board.valid_move?(3) && !board.taken?(1)
           "3"
         else
           "7"
