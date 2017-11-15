@@ -23,11 +23,11 @@ class Game
   def won?
     # Iterates through each combo in WIN_COMBINATIONS to detect if there is a row or column that has 3 Xs of 3 Os.
     # Returns that particular winning combo array.
-    winning_combo = []
+    #winning_combo = []
     WIN_COMBINATIONS.detect do |combo|
-      if (board.position(combo[0]+1) == "X" && board.position(combo[1]+1) == "X" && board.position(combo[2]+1) == "X")||
+      (board.position(combo[0]+1) == "X" && board.position(combo[1]+1) == "X" && board.position(combo[2]+1) == "X")||
         (board.position(combo[0]+1) == "O" && board.position(combo[1]+1) == "O" && board.position(combo[2]+1) == "O")
-        winning_combo << combo
+        #winning_combo << combo
       end
     end
   end
