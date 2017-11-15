@@ -34,7 +34,15 @@ module Players
       elsif board.turn_count == 2
         (board.valid_move?(2) && board.cells[1] != "O") ? "3" : "7"
       elsif board.turn_count == 3 || board.turn_count == 5 || board.turn_count == 7
-        if potential_win_combo_X(board)
+        if potential_win_combo_O(board)
+          if board.position(potential_win_combo_O(board)[0]+1) == " "
+            move = (potential_win_combo_O(board)[0] + 1)
+          elsif board.position(potential_win_combo_O(board)[1]+1) == " "
+            move = (potential_win_combo_O(board)[1] + 1)
+          elsif board.position(potential_win_combo_O(board)[2]+1) == " "
+            move = (potential_win_combo_O(board)[2] + 1)
+          end
+        elsif potential_win_combo_X(board)
           if board.position(potential_win_combo_X(board)[0]+1) == " "
             move = (potential_win_combo_X(board)[0] + 1)
           elsif board.position(potential_win_combo_X(board)[1]+1) == " "
