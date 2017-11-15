@@ -25,7 +25,7 @@ module Players
     def move(board)
       # Gives fairly explicit instructions to a computer player on which moves to play for turns 0 through 2.  Turns 3 through 8
       # are based on whether a potential win-combination from above is detected.  If it is detected, it will play in
-      # that row or column. If a potential win-combination is not detected, it will play in a random cell. 
+      # that row or column. If a potential win-combination is not detected, it will play in a random cell.
 
       if board.turn_count == 0
         "1"
