@@ -5,11 +5,12 @@ require_relative '../config/environment'
 class NewGame
 
   def start
-    # Output starts below then comes comes to here.  Asks for ho
+    # Output starts below then comes comes to here.  Asks for how many players and gets response from user.
     puts "How many players?"
     puts "Press 1 for 1-player.  Press 2 for 2-player.  Press 0 to watch a computer vs. computer game."
     command = gets.strip
 
+    # Conditional based on user's input.  
     if command == "1"
       puts "Would you like to play first? Press Y or N."
       command_two = gets.strip
