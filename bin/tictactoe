@@ -25,7 +25,7 @@ class NewGame
       puts "Player one will go first and be 'X'"
       Game.new.play
     elsif command == "0"
-      # Creates a new game with two computer players and runs the play method in the Game class..
+      # Creates a new game with two computer players and runs the play method in the Game class.
       Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O")).play
     end
       # At the end of game, checks if player(s) want to play again.  If yes, start method is run again.
@@ -37,7 +37,7 @@ class NewGame
   end
 end
 
-# Output to players starts here and then creates a new NewGame class as found above.
+# Output to players starts here and then runs the start method in the NewGame class as found above.
 puts "Welcome to Tic Tac Toe!"
 puts "--------------------------------------"
 NewGame.new.start
