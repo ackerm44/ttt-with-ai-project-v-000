@@ -56,7 +56,8 @@ class Game
   end
 
   def play
-    # Checks each turn that the game has not been won and that there isn't a draw.  If not, it delays one second then runs the turn method.
+    # Checks each turn that the game has not been won and that there isn't a draw.  If not, it delays one second (useful for seeing the
+    # changes to the board) then runs the turn method.
     # If the game has been won, it will display the board and congratulate the winner of X or O.  If there is a draw, it will display the
     # board and output the message of Cats Game.
     while !draw? && !won?
