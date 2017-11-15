@@ -28,7 +28,7 @@ class Game
       (board.position(combo[0]+1) == "X" && board.position(combo[1]+1) == "X" && board.position(combo[2]+1) == "X")||
         (board.position(combo[0]+1) == "O" && board.position(combo[1]+1) == "O" && board.position(combo[2]+1) == "O")
         #winning_combo << combo
-      end
+      #end
     end
   end
 
