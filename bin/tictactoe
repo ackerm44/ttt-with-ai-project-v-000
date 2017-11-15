@@ -10,7 +10,7 @@ class NewGame
     puts "Press 1 for 1-player.  Press 2 for 2-player.  Press 0 to watch a computer vs. computer game."
     command = gets.strip
 
-    # Conditional based on user's input or 0, 1, or 2
+    # Conditional based on user's input of 0, 1, or 2
     if command == "1"
       # If 1 player, checks if user wants to play first.
       puts "Would you like to play first? Press Y or N."
