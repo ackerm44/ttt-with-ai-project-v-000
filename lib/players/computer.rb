@@ -58,7 +58,15 @@ module Players
         end
 
       elsif board.turn_count == 4 || board.turn_count == 6 || board.turn_count == 8
-        if potential_win_combo_O(board)
+        if potential_win_combo_X(board)
+          if board.position(potential_win_combo_X(board)[0]+1) == " "
+            move = (potential_win_combo_X(board)[0] + 1)
+          elsif board.position(potential_win_combo_X(board)[1]+1) == " "
+            move = (potential_win_combo_X(board)[1] + 1)
+          elsif board.position(potential_win_combo_X(board)[2]+1) == " "
+            move = (potential_win_combo_X(board)[2] + 1)
+          end
+        elsif potential_win_combo_O(board)
           if board.position(potential_win_combo_O(board)[0]+1) == " "
             move = (potential_win_combo_O(board)[0] + 1)
           elsif board.position(potential_win_combo_O(board)[1]+1) == " "
