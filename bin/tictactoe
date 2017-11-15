@@ -3,7 +3,7 @@
 require_relative '../config/environment'
 
 class NewGame
-  
+
   def start
     # Output starts below then comes comes to here.  Asks for ho
     puts "How many players?"
@@ -33,7 +33,7 @@ class NewGame
   end
 end
 
-# Output to players starts here and then creates a new NewGame class as found above. 
+# Output to players starts here and then creates a new NewGame class as found above.
 puts "Welcome to Tic Tac Toe!"
-puts "-----------------------------------"
+puts "-------------------------------------------------------------------------"
 NewGame.new.start
