@@ -49,7 +49,7 @@ class Board
   end
 
   def update(cell, player)
-    # Updates the cell with the players X or O.
+    # Updates the cell with the player's X or O.
     cell = cell.to_i - 1
     @cells[cell] = player.token
   end
