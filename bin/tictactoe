@@ -7,7 +7,8 @@ class NewGame
   def start
     # Output starts below then comes comes to here.  Asks for ho
     puts "How many players?"
-    puts "Press 1 for 1-player.  Press 2 for 2-player.  Press 0 to watch a computer vs computer game."
+    puts ""
+    puts "Press 1 for 1-player.  Press 2 for 2-player.  Press 0 to watch a computer vs. computer game."
     command = gets.strip
 
     if command == "1"
