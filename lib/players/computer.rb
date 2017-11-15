@@ -32,7 +32,7 @@ module Players
       elsif board.turn_count == 1
         board.taken?(4) ? "1" : "5"
       elsif board.turn_count == 2
-        (board.valid_move?(3) && !board.taken?(1)) ? "3" : "7"
+        (board.valid_move?(3) && !board.taken?(2)) ? "3" : "7"
       elsif board.turn_count == 3 || board.turn_count == 5 || board.turn_count == 7
         if potential_win_combo_O(board)
           if board.position(potential_win_combo_O(board)[0]+1) == " "
