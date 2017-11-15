@@ -28,7 +28,7 @@ class Board
   end
 
   def full?
-    # Returns true if all of the cells have either and X or O
+    # Returns true if all of the cells have either an X or O
     @cells.all? {|cell| cell == "X" || cell == "O"}
   end
 
