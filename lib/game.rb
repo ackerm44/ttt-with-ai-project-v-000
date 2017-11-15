@@ -16,7 +16,7 @@ class Game
   end
 
   def over?
-    # Returns true if all cells have either an X or O utilizing full method in Board class.
+    # Returns true if all cells have either an X or O utilizing the full method in Board class.
     board.full?
   end
 
